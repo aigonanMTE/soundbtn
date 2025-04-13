@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const counterDisplay = document.getElementById('counter');
 
     // 저장된 값 불러오기
-    chrome.storage.local.get(['counter'], function(result) {
+    chrome.storage.sync.get(['counter'], function(result) {
         counter = result.counter || 0;
         counterDisplay.textContent = formatNumber(counter);
     });
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // 클릭 시 카운터 증가 및 저장
     button.addEventListener('click', function () {
         counter++;
-        chrome.storage.local.set({ counter: counter }, function () {
+        chrome.storage.sync.set({ counter: counter }, function () {
             console.log('Counter saved:', counter);
         });
         counterDisplay.textContent = formatNumber(counter);

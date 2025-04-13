@@ -3,14 +3,9 @@
   "name": "test",
   "description": "test",
   "version": "1.0",
-  "permissions": ["storage", "tabs"],
+  "permissions": ["storage", "tabs", "activeTab"],
   "action": {
     "default_popup": "popup/popup.html"
   },
-  "web_accessible_resources": [
-    {
-      "resources": ["popup/html/setting.html"],
-      "matches": ["<all_urls>"]
-    }
-  ]
+  "options_page": "popup/html/setting.html"
 }

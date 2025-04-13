@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설정</title>
+    <link rel="stylesheet" href="setting.css">
+</head>
+<body>
+    <div id="list">
+        <a href="#" style="color: rgb(255, 255, 255);" id="list1">설정 항목 1 </a>
+    </div>
+    <div id="main">
+        <div id="setting1">
+            <label class="flex-box">
+                <span>이미지 선택</span>
+                <button id="imgaebtn">선택</button>
+            </label>
+            <label class="flex-box">
+                <span id="rgb">숫자 색깔 선택(rgb값으로 적으셈)</span>
+                <button id="rgbreloadbtn">저장</button>
+                <button id="rgbreset">리셋</button>
+                <input type="text" id="rgbinput_r" placeholder="R">
+                <input type="text" id="rgbinput_g" placeholder="G">
+                <input type="text" id="rgbinput_b" placeholder="B">
+            </label>
+        </div>
+    </div>
+    <script src="setting.js"></script>
+</body>
+</html>
