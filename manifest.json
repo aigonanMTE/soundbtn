@@ -7,5 +7,5 @@
   "action": {
     "default_popup": "popup/popup.html"
   },
-  "options_page": "popup/html/setting.html"
+  "options_page": "popup/setting/setting.html"
 }

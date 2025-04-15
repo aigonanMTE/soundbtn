@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', function () {
         counter++;
         chrome.storage.sync.set({ counter: counter }, function () {
             console.log('Counter saved:', counter);
+        });({ counter: counter }, function () {
+            console.log('Counter saved:', counter);
         });
         counterDisplay.textContent = formatNumber(counter);
         playSound(); // 🔊 사운드 재생
@@ -38,3 +40,11 @@ function playSound() {
     audio.play();
 }
 
+function get_uuid(){
+    if (chrome.storage.sync.get(uuid) === null){
+        const uuida = 0
+        chrome.storage.sync.set({uuid:uuida},()=>{
+            console.log(`uuid를 발급 받았습니다 uuid = ${uuida}`)
+        })
+    }
+}

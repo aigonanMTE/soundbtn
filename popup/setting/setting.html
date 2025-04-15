@@ -7,18 +7,18 @@
     <link rel="stylesheet" href="setting.css">
 </head>
 <body>
-    <div id="list">
-        <a href="#" style="color: rgb(255, 255, 255);" id="list1">설정 항목 1 </a>
-    </div>
     <div id="main">
+        <label class="flex-box">
+            <button id="allsavebtn" style="background-color: rgb(122, 36, 36);" >전채 저장</button>
+        </label>
         <div id="setting1">
             <label class="flex-box">
                 <span>이미지 선택</span>
-                <button id="imgaebtn">선택</button>
+                <input type="file" accept="image/jpeg" id="imgaebtn" style="color: rgb(255, 255, 255);">선택</input>
             </label>
             <label class="flex-box">
                 <span id="rgb">숫자 색깔 선택(rgb값으로 적으셈)</span>
-                <button id="rgbreloadbtn">저장</button>
+                <button id="rgbreloadbtn" >미리보기</button>
                 <button id="rgbreset">리셋</button>
                 <input type="text" id="rgbinput_r" placeholder="R">
                 <input type="text" id="rgbinput_g" placeholder="G">

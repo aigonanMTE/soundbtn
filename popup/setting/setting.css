@@ -29,6 +29,14 @@ span{
     gap: 10px;
   }
   
-.flex-box span, .flex-box button {
+.flex-box span{
 flex-grow: 1;
+}
+
+.flex-box button{
+    flex-grow: 1;
+    background-color: rgb(85, 85, 85);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 0px;
 }
